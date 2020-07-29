@@ -1,5 +1,9 @@
 
-/* Global Assignments */
+/* Universal styles */
+html body{
+    margin: 0;
+}
+
 .main-content {
     position: relative;
     top: 64px;
@@ -14,6 +18,10 @@ nav a {
     text-decoration: none;
 }
 
+nav ul li {
+    padding: 16px;
+}
+
 .grey {
     background-color: lightgray;
 }
@@ -24,6 +32,11 @@ nav a {
 
 .lighter {
     font-weight: lighter;
+}
+
+.centered-title {
+    text-align: center;
+    padding: 32px 0px;
 }
 
 /* Navigation Header */
@@ -76,10 +89,6 @@ header nav ul {
     align-items: center;
 }
 
-nav ul li {
-    padding: 16px;
-}
-
 /* Main Content */
     /* Learn Something New Everyday */
 
@@ -91,7 +100,7 @@ nav ul li {
 
 .learn-something-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 40%;
 }
 
@@ -99,8 +108,8 @@ nav ul li {
     display: flex;
     justify-content: left;
     flex-direction: column;
-    /*! align-items: center; */
     padding: 24px;
+    width: 70%;
 }
 
 #banner-img {
@@ -109,7 +118,7 @@ nav ul li {
 }
 
 .button {
-    background-color: darkslategray;
+    background-color: dimgray;
     color: white;
     text-align: center;
     width: 100%;
@@ -142,8 +151,7 @@ nav ul li {
 
 .side-pane {
     display: flex;
-    width: 100%;
-    border: lightgray solid 1px;
+    /* border: lightgray solid 1px; */
 }
 
 .side-pane img {
@@ -162,11 +170,6 @@ nav ul li {
 }
 
     /* Start Learning */
-.start-learning-title {
-    text-align: center;
-    padding: 32px 0px;
-}
-
 .course-options {
     display: flex;
     justify-content: center;
@@ -194,4 +197,44 @@ nav ul li {
 
 .course-text-container {
     padding: 0px 16px;
+}
+
+    /* Thesis Exhibit */
+.left-container video {
+    width: 100%;
+}
+
+.right-container-start {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: start;
+    padding: 16px 0;
+}
+
+    /* Footer */
+footer {
+    display: flex;
+    border-top: dimgray solid 1px;
+    color: dimgray;
+    align-items: center;
+}
+
+footer .footer-content {
+    display: flex;
+    flex: 1;
+    margin-left: 24px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
