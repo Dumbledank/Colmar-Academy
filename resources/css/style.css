@@ -143,7 +143,6 @@ nav ul li {
 .side-pane {
     display: flex;
     width: 100%;
-    /* padding: 16px 24px; */
     border: lightgray solid 1px;
 }
 
@@ -160,4 +159,39 @@ nav ul li {
 .side-pane-interior {
     display: flex;
     padding: 16px 24px;
+}
+
+    /* Start Learning */
+.start-learning-title {
+    text-align: center;
+    padding: 32px 0px;
+}
+
+.course-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.course {
+    width: 30%;
+    height: 425px;
+}
+
+.course img {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.spacer {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+}
+
+.course-text-container {
+    padding: 0px 16px;
 }
