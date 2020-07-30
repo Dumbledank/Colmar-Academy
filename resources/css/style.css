@@ -34,9 +34,17 @@ nav ul li {
     font-weight: lighter;
 }
 
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
 .centered-title {
     text-align: center;
     padding: 32px 0px;
+}
+#mobile-img {
+    display: none;
 }
 
 /* Navigation Header */
@@ -48,7 +56,7 @@ header {
     /* opacity: 0.8; */
 }
 
-header .nav-bar-content {
+header .nav-bar-content-desktop {
     display: flex;
     align-items: center;
     width: 100%;
@@ -89,6 +97,28 @@ header nav ul {
     align-items: center;
 }
 
+.nav-bar-content-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    Header .nav-bar-content-desktop {
+        display: none;
+    }
+
+    .nav-bar-content-mobile {
+        display: flex;
+        width: 100%;
+        height: 64px;
+    }
+    .nav-bar-content-mobile ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+    }
+}
+
 /* Main Content */
     /* Learn Something New Everyday */
 
@@ -124,6 +154,22 @@ header nav ul {
     width: 100%;
 }
 
+@media only screen and (max-width: 600px){
+    .learn-something {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #banner-img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .learn-something-container {
+        width: 100%;
+    }
+}
+
     /* Keep practicing */
 .keep-practicing {
     display: flex;
@@ -154,19 +200,72 @@ header nav ul {
     /* border: lightgray solid 1px; */
 }
 
-.side-pane img {
+#desktop-img-container {
     width: 35%;
+
+    display: flex;
+    align-items: center;
+}
+
+#desktop-img-container img {
+    width: 100%;
     height: auto;
 }
 
 .side-pane .text-container {
     width: 65%;
     padding: 0 10px;
+    padding-bottom: 24px;
 }
 
 .side-pane-interior {
     display: flex;
     padding: 16px 24px;
+}
+
+@media only screen and (max-width: 895px){
+    #desktop-img-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .left-container {
+        display: none;
+    }
+
+    #desktop-img-container {
+        display: none;
+    }
+
+    .keep-practicing {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+    }
+
+    .side-pane {
+        width: 100%;
+    }
+
+    .side-pane-interior {
+        display: inline-block;
+        width: 100%;
+        padding: 24px 0;
+    }
+
+    #mobile-img {
+        display: inline-block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .side-pane .text-container {
+        display: inline-block;
+        padding: 0px 16px;
+    }
 }
 
     /* Start Learning */
@@ -199,6 +298,42 @@ header nav ul {
     padding: 0px 16px;
 }
 
+.mobile-text {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .centered-title {
+        padding: 0;
+    }
+    .start-learning {
+        background-color: white;
+        border: 1px dimgray solid;
+        padding: 16px;
+    }
+
+    .course-options {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .course {
+        width: 100%;
+        height: auto;
+        background-color: lightgray;
+        margin: 8px 16px;
+    }
+
+    .spacer {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+        padding: 16px;
+        
+    }
+}
+
     /* Thesis Exhibit */
 .left-container video {
     width: 100%;
@@ -210,6 +345,24 @@ header nav ul {
     width: 40%;
     justify-content: start;
     padding: 16px 0;
+}
+
+.mobile-vid-container {
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .desktop {
+        display: none;
+    }
+    .mobile-vid-container {
+        display: block;
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
 }
 
     /* Footer */
