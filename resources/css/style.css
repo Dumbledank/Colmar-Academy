@@ -35,7 +35,8 @@ nav ul li {
 }
 
 .lighter {
-    font-weight: lighter;
+    /* font-weight: lighter; */
+    font-weight: 300;
 }
 
 .center {
@@ -180,11 +181,22 @@ header nav ul {
     width: 100%;
 }
 
-.left-container {
+.padded-left-container {
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 32px 24px;
+}
+
+.padded-left-container img {
+    width: 100%;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 24px;
 }
 
 .left-container img {
@@ -348,7 +360,7 @@ header nav ul {
     flex-direction: column;
     width: 40%;
     justify-content: start;
-    padding: 16px 0;
+    /*! padding: 32px 0; */
 }
 
 .mobile-vid-container {
