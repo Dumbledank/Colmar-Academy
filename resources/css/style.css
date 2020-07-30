@@ -1,5 +1,9 @@
 
 /* Universal styles */
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 html body{
     margin: 0;
 }
@@ -390,4 +394,8 @@ footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer nav a {
+    color: dimgray;
 }
