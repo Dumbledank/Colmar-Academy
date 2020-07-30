@@ -249,6 +249,9 @@ header nav ul {
     .left-container {
         display: none;
     }
+    .padded-left-container {
+        display: none;
+    }
 
     #desktop-img-container {
         display: none;
